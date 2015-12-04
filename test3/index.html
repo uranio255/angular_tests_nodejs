@@ -1,0 +1,20 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <title>Iterating Over Data</title>
+</head>
+<body ng-init="people=[{name:'John', city:'Cordue'},{name:'Tatiana', city:'Maracaibo'}]">
+
+    <ul>
+        <li ng-repeat="person in people">{{person.name}} lives in {{person.city}}</li>
+    </ul>
+    
+    <table border="1">
+        <tr ng-repeat="person in people">
+            <td>{{person.name}} lives in {{person.city}}</td>
+        </tr>
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</body>
+</html>
